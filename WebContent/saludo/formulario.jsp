@@ -1,13 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
+<html lang="es">
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css?e">
+		<base href="/helloweb/">
+	</head>
 <body>
-	<a href="../index.jsp">Volver a inicio.</a>
+	<nav class="barraNavegacion">
+			<a href="../helloweb">Inicio</a>
+		</nav>
 	<h1>Soy un formulario.</h1>
 	<p style="color:red">${mensaje}</p>
 	<form action="../saludar" method="get">

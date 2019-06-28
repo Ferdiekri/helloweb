@@ -42,7 +42,7 @@ public class SaludoController extends HttpServlet {
 		
 		if (nombre == null || nombre.isEmpty()) {
 			request.setAttribute(nombre, "Por favor, introduce un nombre.");
-			vista="saludo/formulario.jsp";
+			vista="/saludo/formulario.jsp";
 		}else {
 			if ("eu".equalsIgnoreCase(idioma)) {
 				saludo = "Kaixo " + nombre;

@@ -8,6 +8,9 @@
 		<base href="/helloweb/">
 	</head>
 	<body>
+		<nav class="barraNavegacion">
+			<a href="../helloweb">Inicio</a>
+		</nav>
 		<h1>TÍTULO: ${video.titulo}</h1>
 		<h2>CÓDIGO: ${video.codigo}</h2>
 				

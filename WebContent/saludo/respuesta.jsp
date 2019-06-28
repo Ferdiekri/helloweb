@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
-		<meta charset="UTF-8">
 		<title>Respuesta</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css?e">
+		<base href="/helloweb/">
 	</head>
 	<body>
+		<nav class="barraNavegacion">
+			<a href="../helloweb">Inicio</a>
+		</nav>
 		<h1>Página del Saludo</h1>
 	
 		<h2>Saludo:</h2>
