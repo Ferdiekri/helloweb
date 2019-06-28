@@ -1,0 +1,28 @@
+/*
+	Nuestra hoja de estilos principal
+	@author Eder Ibáñez Rojo
+	@version 1.0
+	@fecha 27.06.2019
+*/
+h1 {
+	color: #abcdef;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+img {
+	width: 50%;
+	height: auto;
+	filter: hue-rotate(45deg);
+}
+
+.text-danger {
+	color: red;
+}
+
+.barraNavegacion{
+	display: flex;
+    justify-content: space-evenly;
+    background: rgba(0, 128, 128,0.5)
+	
+}
