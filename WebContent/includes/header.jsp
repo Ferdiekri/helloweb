@@ -12,7 +12,7 @@
 %>
 
 <!DOCTYPE>
-<html>
+<html lang="es">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>HelloWeb <%= "title" %></title>
@@ -27,9 +27,10 @@
 		<!-- Mis librerías  -->
 		<link rel="stylesheet" type="text/css" href="vendors/fontawesome-free-5.9.0-web/css/all.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/estilos.css?<%=System.currentTimeMillis() %>" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/estilos-posicionamiento.css?<%=System.currentTimeMillis() %>" media="screen" />
 	</head>
 	
-	<body>
+	<body name="top">
 		<header id="principal">
 			<div class="content">
 				<h1>
@@ -49,7 +50,13 @@
 			</div>
 		</header>
 		
-		<main class="content">
+		<main class="content" >
+		
+			<div class="boton-subir">
+				<a href="${pageContext.request.requestURL}#top"><i class="fas fa-arrow-up"></i></a>
+			</div>
+			
+			
 			
 		
 		

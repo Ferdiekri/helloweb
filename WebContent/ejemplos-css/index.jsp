@@ -31,6 +31,15 @@
 						<li>3.5. <a href="">XXXXX</a></li>
 					</ol>
 				</li>
+				<li><h2>Capítulo 5. Posicionamiento y visualización.</h2>
+					<ol>
+						<li>5.1. <a href="ejemplos-css/tipos-elementos.jsp?a=3&title=Tipos%20de%20elementos">Tipos de elementos</a></li>
+						<li>5.2. <a href="ejemplos-css/posicionamiento-normal.jsp?a=3&title=Posicionamiento%20normal">Posicionamiento normal</a></li>
+						<li>5.3. <a href="ejemplos-css/posicionamiento-relativo.jsp?a=3&title=Posicionamiento%20relativo">Posicionamiento relativo</a></li>
+						<li>5.4. <a href="ejemplos-css/posicionamiento-absoluto.jsp?a=3&title=Posicionamiento%20absoluto">Posicionamiento absoluto</a></li>
+						<li>5.5. <a href="ejemplos-css/visualizacion.jsp?a=3&title=Visualización">Visualización</a></li>
+					</ol>
+				</li>
 			</ol>
 		</nav>
 			

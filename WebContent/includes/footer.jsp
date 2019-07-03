@@ -9,7 +9,11 @@
 						document.write(dt.getFullYear() ); 
 					</script>
 				</p>
-				<p>Pie de página</p>
+				<p>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-instagram"></i>
+				</p>
 				
 				
 			</div>

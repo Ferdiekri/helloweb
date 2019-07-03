@@ -35,6 +35,7 @@ body{
   }
 
 h1, h2, h3, h4, h5, h6 {
+	text-transform: capitalize;
 	color: #2f363c;
 	font-weight: 700;
 	line-height: 1.25;
@@ -69,15 +70,14 @@ a, a:visited{
 	text-decoration: none;
 }
 
-a:hover{
-	color:#d86c5c;
+p{
+	text-indent: 20px;
+	margin-bottom: 1em;
+	text-align: left;
 }
 
 p a{
 	text-decoration: underline;
-}
-p{
-	text-indent: 20px;
 }
 
 .parrafo{
@@ -129,13 +129,23 @@ header#principal{
 
 footer{
 	background-color: rgb(148, 144, 145);
-	/*
+	
 	padding: 20px;
 	margin-top: 30px;
-	*/
+	height:50px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+code, pre {
+    background: #f6f8fa;
+    color: #333;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-size: 14px;
+    font-size-adjust: .5;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 /*************************************************************************
@@ -164,6 +174,7 @@ footer{
 
 main.content{
 	margin-top: 115px;
+	margin-bottom:100px;
 }
 
 nav.content{
@@ -226,3 +237,17 @@ header#principal #parteTitulo2{
 	borde
 }
 
+.boton-subir{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 9999;
+	background-color: #003580;
+	border: 3px solid #000;
+	border-radius: 50%;
+	color: rgb(209, 221, 239);
+	font-size: 25px;
+	padding: 15px;
+	-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}

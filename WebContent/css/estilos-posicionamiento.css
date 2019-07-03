@@ -1,0 +1,51 @@
+.contenedor {
+	border: 1px solid #000;
+	padding: 20px;
+	position: relative;
+}
+
+.box {
+	background-color: teal;
+	color: #FFF;
+	margin: 1%;
+	width: 31%;
+	height: 30%;
+	display: inline-block;
+}
+
+.w100 {
+	width: 98%;
+}
+
+.relativo {
+	background-color: rgba(205, 133, 63, 0.75);
+	position: relative;
+	top: 50px;
+	left: 75px;
+}
+
+.absoluta{
+	position: absolute;
+	background-color: rgba(205, 133, 63, 0.75);
+	top: 50px;
+	left: 75px;
+}
+
+.caja{
+	background-color: #8080c0;
+	width: 200px;
+	height: 200px;
+	font-size: 8em;
+	font-weight: 800;
+	margin: 1%;
+	display: inline-block;
+	text-align: center;
+}
+
+.escondida{
+	display: none;
+}
+
+.invisible{
+	visibility: hidden;
+}
