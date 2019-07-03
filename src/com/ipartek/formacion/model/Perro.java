@@ -74,7 +74,7 @@ public class Perro implements Serializable {
 	 * @param edad int valor en años.
 	 * @throws Exception edad < 0
 	 */
-	public void setEdad(int edad) throws Exception {
+	public void setEdad(int edad) {
 		this.edad = edad;
 
 	}

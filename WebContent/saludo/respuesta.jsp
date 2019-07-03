@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<title>Respuesta</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/estilos.css?e">
-		<base href="/helloweb/">
-	</head>
-	<body>
-		<nav class="barraNavegacion">
-			<a href="../helloweb">Inicio</a>
-		</nav>
+<%@include file="../includes/header.jsp" %>
+
+	<main class="content">
 		<h1>Página del Saludo</h1>
 	
 		<h2>Saludo:</h2>
@@ -23,5 +14,6 @@
 				out.print("<p>" + atributoSaludo + "</p>");
 			}
 		%>
-	</body>
-</html>
+</main>
+	
+<%@include file="../includes/footer.jsp" %>

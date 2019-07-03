@@ -3,26 +3,226 @@
 	@author Eder Ibáñez Rojo
 	@version 1.0
 	@fecha 27.06.2019
+	
+	1. Reset          - resetear estilos del user-agent.
+	2. Etiquetas      - dar estilo base a todas las etiquetas.
+	3. Clases comunes -
+	4. Layouts        - Secciones de la web (cabecera, menús, pies, ...)
+	5. Media queries  -  para responsive web design. 
 */
+
+ /*************************************************************************
+  *                                                                       *
+  * 1. Reset
+  * 
+  *************************************************************************/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+ /*************************************************************************
+  *  2. Etiquetas
+  *************************************************************************/
+body{
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+    font-size: 1rem;
+    font-weight: 400; /* grosor */
+    line-height: 1.5; /* separación entre líneas */
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2f363c;
+	font-weight: 700;
+	line-height: 1.25;
+}
+  
 h1 {
-	color: #abcdef;
-	text-transform: uppercase;
-	font-size: 1.5em;
+	/*color: teal;
+	text-transform: uppercase;*/
+	font-size: 3em;
 }
 
-img {
-	width: 50%;
-	height: auto;
-	filter: hue-rotate(45deg);
+h2{
+	color: #2f363c;
+	font-size: 1.5em;
+	
 }
 
 .text-danger {
 	color: red;
 }
 
-.barraNavegacion{
+ol, ul{
+	list-style-type: none;
+}
+
+li{
+	padding-left: 30px;
+}
+
+a, a:visited{
+	color:#0358d8;
+	text-decoration: none;
+}
+
+a:hover{
+	color:#d86c5c;
+}
+
+p a{
+	text-decoration: underline;
+}
+p{
+	text-indent: 20px;
+}
+
+.parrafo{
+	font-family: 'Barriecito', cursive;
+	text-indent: 50px;
+}
+
+p1{
+	line-height: 1em;
+	color: peru;
+	letter-spacing: 1em;
+	text-align: left;
+}
+
+p2{
+	line-height: 2em;
+	color: red;
+	letter-spacing: 2em;
+	text-align: center;
+}
+
+p3{
+	line-height: 3em;
+	color: orange;
+	letter-spacing: 3em;
+	text-align: right;
+}
+
+.parrafo::first-line{
+	font-size:80px;
+	color:rgba(23, 95, 88, 1);
+}
+
+img{
+	width:250px;
+	height: auto;
+	align-content: center;
+}
+
+header#principal{
+	background-color: rgb(0, 53, 128);
+	color: white;
+	padding: 10px 0 11px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+footer{
+	background-color: rgb(148, 144, 145);
+	/*
+	padding: 20px;
+	margin-top: 30px;
+	*/
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+/*************************************************************************
+  *  3. Clases comunes
+  *************************************************************************/
+
+
+.active{  
+    background: #003580;
+    border-radius: 2px;
+    color: #FFF !important;
+    padding: 10px 5px;
+    margin-top:-10px;
+    
+}
+
+
+/*************************************************************************
+  *  4. Layouts
+  *************************************************************************/
+
+.content{
+	max-width: 1024px;
+	margin: auto;	/* Centrado en horizontal. */
+}
+
+main.content{
+	margin-top: 115px;
+}
+
+nav.content{
+	max-width: 1024px;
+	margin: auto;
 	display: flex;
-    justify-content: space-evenly;
-    background: rgba(0, 128, 128,0.5)
+	flex-direction: row;
+	justify-content: space-around;
+	font-weight: 600;
+}
+
+/*nav a:hover{
+	background-color: #003580;
+	color: white;
+}*/
+
+.wrapper-nav{
+	background-color: #f7f7f7;
+	width: 100%;
+	background: #f7f7f7;
+	border-bottom: 1px solid #dee0e2;
+	color: #003580;
+	top:80px;
+	left:0;
+	position: fixed;
+	padding: 15px 0;
+	width: 100%;
+	height: 10px;
+	text-align: left;
 	
 }
+
+.wrapper-nav a {
+	color: #003580;
+	line-height: 1;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+/*.wrapper-nav a .active {
+    background: #003580;
+    border-radius: 2px;
+    color: #FFF !important;
+    padding: 3px 8px;
+}*/
+
+header#principal #parteTitulo1{
+	color:rgb(255, 255, 255);
+	text-transform: lowercase;
+}
+
+header#principal #parteTitulo2{
+	color:rgb(209, 221, 239);
+	text-transform: lowercase;
+}
+
+
+#menu{
+	borde
+}
+

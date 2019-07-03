@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<title>Formulario Perro</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/estilos.css?e">
-		<base href="/helloweb/">
-	</head>
-	
-	<body>
-		<nav class="barraNavegacion">
-			<a href="../helloweb">Inicio</a>
-		</nav>
+<%@include file="../includes/header.jsp" %>
+
+	<main class="content">
 		<h1>Formulario Perro</h1>
 		
 		<p class="text-danger">${mensaje}</p>
-		<form action="PerroController" method="get">
+		<form action="PerroController" method="post">
 			<fieldset>
 				<legend>Datos del perro</legend>
 				<label for="nombre">Nombre: </label>
@@ -38,12 +28,13 @@
 				<br>
 				<br>
 				<label for="vacunado">Vacunado: </label>
-				<input type="checkbox" name="vacunado" value="true"> Sí
-				<input type="checkbox" name="vacunado" value="true"> No
+				<input type="radio" name="vacunado" value="true"> Sí
+				<input type="radio" name="vacunado" value="true"> No
 				<br>
 				<br>
 				<input type="submit" value="Crear Perro">
 			</fieldset>
 		</form>
-	</body>
-</html>
+	</main>
+	
+<%@include file="../includes/footer.jsp" %>

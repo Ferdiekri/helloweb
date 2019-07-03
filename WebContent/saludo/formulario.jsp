@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<title>Formulario</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/estilos.css?e">
-		<base href="/helloweb/">
-	</head>
-<body>
-	<nav class="barraNavegacion">
-			<a href="../helloweb">Inicio</a>
-		</nav>
+<%@include file="../includes/header.jsp" %>
+
+	<main class="content">
 	<h1>Soy un formulario.</h1>
 	<p style="color:red">${mensaje}</p>
 	<form action="../saludar" method="get">
@@ -33,6 +24,6 @@
 		<input type="submit" value="Enviar">
 
 	</form>
-
-</body>
-</html>
+</main>
+	
+<%@include file="../includes/footer.jsp" %>
