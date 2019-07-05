@@ -1,7 +1,11 @@
 <%@page import="com.sun.xml.internal.txw2.Document"%>
+
+			<div class="boton-subir">
+				<a href="#top" onclick="goTop(event)"><i class="fas fa-arrow-up"></i></a>
+			</div>
 		
 		</main>
-		<footer>
+		<footer id="main">
 			<div class="content">
 				<p>&copy;Ipartek - 
 					<script type = "text/javascript">
@@ -18,5 +22,8 @@
 				
 			</div>
 		</footer>
+		
+		<script src="js/main.js"></script>
+		
 	</body>
 </html>

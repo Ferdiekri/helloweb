@@ -6,7 +6,7 @@
 		
 		<nav>
 			<ol>
-				<li>Ejercicio 1</li>
+				<li>2.1 <a href="ejemplos-html/fondo-gradiente.jsp?a=2&title=Fondo%20Gradiente">Fondo Gradiente</a></li>
 				<li>Ejercicio 2</li>
 				<li>Ejercicio 3</li>
 				<li>Ejercicio 4</li>

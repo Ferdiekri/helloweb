@@ -1,0 +1,12 @@
+.radial {
+  background: -moz-radial-gradient(center, circle cover, teal 0%, #000 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, teal), color-stop(100%, #000));
+  background: -webkit-radial-gradient(center, circle cover, teal 0%, #000 100%);
+  background: -o-radial-gradient(center, circle cover, teal 0%, #000 100%);
+  background: -ms-radial-gradient(center, circle cover, teal 0%, #000 100%);
+  background: radial-gradient(center, circle cover, teal 0%, #000 100%);
+  background-color: teal;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}

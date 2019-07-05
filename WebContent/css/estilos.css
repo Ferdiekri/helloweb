@@ -20,6 +20,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
  /*************************************************************************
+  *  1.5. Clearfix
+  *************************************************************************/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { display: inline-block; }
+
+ /*************************************************************************
   *  2. Etiquetas
   *************************************************************************/
 body{
@@ -112,9 +126,8 @@ p3{
 }
 
 img{
-	width:250px;
+	width:100%;
 	height: auto;
-	align-content: center;
 }
 
 header#principal{
@@ -127,7 +140,7 @@ header#principal{
 	z-index: 999;
 }
 
-footer{
+footer#main{
 	background-color: rgb(148, 144, 145);
 	
 	padding: 20px;
@@ -160,6 +173,21 @@ code, pre {
     padding: 10px 5px;
     margin-top:-10px;
     
+}
+
+.boton-subir{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 9999;
+	background-color: #003580;
+	border: 3px solid #000;
+	border-radius: 50%;
+	color: rgb(209, 221, 239);
+	font-size: 25px;
+	padding: 15px;
+	-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 
@@ -235,19 +263,4 @@ header#principal #parteTitulo2{
 
 #menu{
 	borde
-}
-
-.boton-subir{
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	z-index: 9999;
-	background-color: #003580;
-	border: 3px solid #000;
-	border-radius: 50%;
-	color: rgb(209, 221, 239);
-	font-size: 25px;
-	padding: 15px;
-	-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-	box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
