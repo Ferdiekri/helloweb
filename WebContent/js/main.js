@@ -20,6 +20,8 @@ function init(){
 
 	activateMenu();
 
+	annoActual();
+
 }
 
 function activateMenu(){
@@ -47,6 +49,12 @@ function activateMenu(){
 	}
 
 	console.trace('activateMenu inicio');
+}
+
+function annoActual(){
+	var fecha = new Date();
+  	var annoFecha = fecha.getFullYear();
+  	document.getElementById("annoActual").innerHTML = "&copy; Ipartek - " + annoFecha;
 }
 
 var h1 = document.getElementById("titulo1");

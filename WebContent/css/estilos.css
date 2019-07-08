@@ -149,6 +149,16 @@ footer#main{
 	width: 100%;
 }
 
+footer#main content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer#main content::last-child{
+	padding-right: 50px;
+}
+
 code, pre {
     background: #d1ddef;
     color: #333;
@@ -233,7 +243,7 @@ input[type="reset"]:hover{
 
 .active{  
     background: #003580;
-    border-radius: 2px;
+    border-radius: 10px;
     color: #FFF !important;
     padding: 10px 5px;
     
@@ -265,7 +275,7 @@ input[type="reset"]:hover{
 }
 
 main.content{
-	margin-top: 115px;
+	margin-top: 130px;
 	margin-bottom:100px;
 }
 
@@ -291,7 +301,6 @@ nav.content{
 	position: fixed;
 	padding: 15px 0;
 	width: 100%;
-	height: 10px;
 	text-align: left;
 	
 }

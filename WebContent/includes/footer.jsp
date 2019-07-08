@@ -1,3 +1,4 @@
+<%@page import="java.lang.reflect.AnnotatedArrayType"%>
 <%@page import="com.sun.xml.internal.txw2.Document"%>
 
 			<div class="boton-subir">
@@ -7,23 +8,20 @@
 		</main>
 		<footer id="main">
 			<div class="content">
-				<p>&copy;Ipartek - 
-					<script type = "text/javascript">
-						var dt = new Date();
-						document.write(dt.getFullYear() ); 
-					</script>
-				</p>
-				<p>
+				<span id="annoActual">&copy;</span>
+				<span>
 					<i class="fab fa-facebook-square"></i>
 					<i class="fab fa-twitter-square"></i>
 					<i class="fab fa-instagram"></i>
-				</p>
+				</span>
 				
 				
 			</div>
 		</footer>
 		
 		<script src="js/main.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
 		
 	</body>
 </html>

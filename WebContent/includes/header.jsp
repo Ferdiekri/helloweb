@@ -20,6 +20,8 @@
 		<!-- Fuentes -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
+		<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/darcula.css">
 		<!-- Font Awesome 
     	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">-->
 		<!-- Mis librerías  -->
@@ -45,7 +47,7 @@
 						<li><a href="ejemplos-html/index.jsp?HTML" ><i class="fab fa-html5"></i> HTML</a></li>
 						<li><a href="ejemplos-css/index.jsp?CSS" > <i class="fab fa-css3-alt"></i> CSS</a></li>
 						<li><a href="ejemplos-js/index.jsp?JS" ><i class="fab fa-js-square"></i> JS</a></li>
-						<li><a href="ejemplos-servlet/index.jsp?JSP" >Servlet + JSP</a></li>
+						<li><a href="ejemplos-servlet/index.jsp?JSP" ><i class="fas fa-server"></i> Servlet</a></li>
 					</ul>
 				</nav>
 				
