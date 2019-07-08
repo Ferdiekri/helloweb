@@ -1,13 +1,13 @@
 /*
 	Nuestra hoja de estilos principal
-	@author Eder Ibáñez Rojo
+	@author Eder Ibï¿½ï¿½ez Rojo
 	@version 1.0
 	@fecha 27.06.2019
 	
 	1. Reset          - resetear estilos del user-agent.
 	2. Etiquetas      - dar estilo base a todas las etiquetas.
 	3. Clases comunes -
-	4. Layouts        - Secciones de la web (cabecera, menús, pies, ...)
+	4. Layouts        - Secciones de la web (cabecera, menï¿½s, pies, ...)
 	5. Media queries  -  para responsive web design. 
 */
 
@@ -42,7 +42,7 @@ body{
 	/*font-family: 'Roboto', sans-serif;*/
     font-size: 1rem;
     font-weight: 400; /* grosor */
-    line-height: 1.5; /* separación entre líneas */
+    line-height: 1.5; /* separaciï¿½n entre lï¿½neas */
     color: #212529;
     text-align: left;
     background-color: #fff;
@@ -75,9 +75,7 @@ ol, ul{
 	list-style-type: none;
 }
 
-li{
-	padding-left: 30px;
-}
+
 
 a, a:visited{
 	color:#0358d8;
@@ -152,13 +150,80 @@ footer#main{
 }
 
 code, pre {
-    background: #f6f8fa;
+    background: #d1ddef;
     color: #333;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
     font-size: 14px;
     font-size-adjust: .5;
     white-space: pre-wrap;
-    word-break: break-all;
+	word-break: break-all;
+	display:inline-block;
+}
+
+form fieldset{
+	border:1px double black;
+	padding: 20px;
+}
+
+form legend{
+	padding: 10px;
+}
+
+label{
+	color: #003580;
+	margin-right: 15px;
+}
+
+label::after{
+	content: ": ";
+}
+
+label.obligatorio::before{
+	content: "* ";
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+	border:none;
+	border-bottom: 1px solid #000;
+	padding:5px 10px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus{
+	font-size: 1.5em;
+}
+
+input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid{
+	color: #f96500;
+	border-color: #f96500;
+}
+
+input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid{
+	color:  #003580;
+	border-color: #003580;
+}
+
+input[type="submit"], input[type="reset"]{
+	background-color: #003580;
+	color: #FFF;
+	border-radius:10px;
+	border:none;
+	margin-top: 3em;
+	padding: 10px;
+}
+
+input[type="submit"]:hover{
+	background-color:rgb(209, 221, 239);
+}
+input[type="submit"]:after{
+	padding-right: 6em;;
+}
+
+input[type="reset"]{
+	background-color:#f96500;
+}
+
+input[type="reset"]:hover{
+	background-color:rgb(209, 221, 239);
 }
 
 /*************************************************************************
@@ -171,7 +236,6 @@ code, pre {
     border-radius: 2px;
     color: #FFF !important;
     padding: 10px 5px;
-    margin-top:-10px;
     
 }
 
@@ -208,9 +272,6 @@ main.content{
 nav.content{
 	max-width: 1024px;
 	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 	font-weight: 600;
 }
 
@@ -261,6 +322,25 @@ header#principal #parteTitulo2{
 }
 
 
-#menu{
-	borde
+#menu ul {
+	display: flex;
 }
+
+#menu ul li{
+	margin-right: 10px;
+	padding-left: 0;
+}
+
+#menu ul li::last-child{
+	margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+

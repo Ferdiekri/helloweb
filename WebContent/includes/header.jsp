@@ -7,8 +7,6 @@
 		title = " | " + title;
 	}
 	
-	String active = request.getParameter("a");
-
 %>
 
 <!DOCTYPE>
@@ -32,7 +30,7 @@
 		
 	</head>
 	
-	<body id="top">
+	<body id="top" onload="init()">
 		<header id="principal">
 			<div class="content">
 				<h1>
@@ -42,13 +40,16 @@
 				</h1>
 			</div>
 			<div class="wrapper-nav">
-				<nav class="content"> <!-- id="menu" -->
-					<a href="${pageContext.request.contextPath}/?a=1" class="<%=("1".equals(active))?"active":""%>"><i class="fas fa-home"></i> Inicio</a>
-					<a href="ejemplos-html/index.jsp?HTML&a=2" class="<%=("2".equals(active))?"active":""%>"><i class="fab fa-html5"></i> HTML</a>
-					<a href="ejemplos-css/index.jsp?CSS&a=3" class="<%=("3".equals(active))?"active":""%>"> <i class="fab fa-css3-alt"></i> CSS</a>
-					<a href="ejemplos-js/index.jsp?JS&a=4" class="<%=("4".equals(active))?"active":""%>"><i class="fab fa-js-square"></i> JS</a>
-					<a href="ejemplos-servlet/index.jsp?JSP&a=5" class="<%=("5".equals(active))?"active":""%>">Servlet + JSP</a>
+				<nav id="menu" class="content"> <!-- id="menu" -->
+					<ul >
+						<li><a href="ejemplos-html/index.jsp?HTML" ><i class="fab fa-html5"></i> HTML</a></li>
+						<li><a href="ejemplos-css/index.jsp?CSS" > <i class="fab fa-css3-alt"></i> CSS</a></li>
+						<li><a href="ejemplos-js/index.jsp?JS" ><i class="fab fa-js-square"></i> JS</a></li>
+						<li><a href="ejemplos-servlet/index.jsp?JSP" >Servlet + JSP</a></li>
+					</ul>
 				</nav>
+				
+				
 			</div>
 		</header>
 		

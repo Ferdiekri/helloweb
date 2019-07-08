@@ -15,9 +15,136 @@ console.warn("Houston tenemos un problemilla");
 console.error("Upps la he liado parda.");
 */
 
+function init(){
+	console.debug("DOM cargado y listo para usar.");
+
+	activateMenu();
+
+}
+
+function activateMenu(){
+	console.trace('activateMenu inicio');
+
+	var url = window.location.href;
+	var anclasMenu = document.querySelectorAll('#menu a')
+
+	//console.debug('anclasMenu %o' + anclasMenu);
+
+	console.debug("url= " + url);
+	
+	if (url.indexOf("/ejemplos-html/") != -1) {	
+		console.debug('activate menu HTML.');
+		anclasMenu[0].classList.add('active');
+	} else if (url.indexOf("/ejemplos-css/") != -1) {	
+		console.debug('activate menu CSS.');
+		anclasMenu[1].classList.add('active');
+	} else if (url.indexOf("/ejemplos-js/") != -1) {	
+		console.debug('activate menu JS.');
+		anclasMenu[2].classList.add('active');
+	} else if (url.indexOf("/ejemplos-servlet/") != -1) {
+		console.debug('activate menu SERVLET.');	
+		anclasMenu[3].classList.add('active');
+	}
+
+	console.trace('activateMenu inicio');
+}
+
+var h1 = document.getElementById("titulo1");
+console.log("Seleccionado elemento h1 por su id. Contiene texto: " + h1.textContent);
+
+var texto = "hola";
+
+parrafos = document.getElementsByTagName("p");
+console.log("Parrafos %o", parrafos);
+
+for (let i = 0; i < parrafos.length; i++) {
+	parrafos[i].style.color="green";
+	parrafos[i].style.fontSize= "26px";
+	
+}
+
+var animalesJson = [{
+							"nombre": "Gato",
+							"clase": "fas fa-cat fa-3x"
+						},
+						{
+							"nombre": "Perro",
+							"clase": "fas fa-dog fa-3x"
+						},
+						{
+							"nombre": "Cuervo",
+							"clase": "fas fa-crow fa-3x"
+						}
+					];
+
+console.log("animalesJson %o", animalesJson);
+
+var lista = document.getElementById("listaAnimales");
+
+lista.innerHTML = "";
+
+var lis ="";
+
+for(i=0;i<animalesJson.length;i++){
+	lis += `<li>${animalesJson[i].nombre} <i class="${animalesJson[i].clase}"></i>`;
+}
+
+lista.innerHTML=lis;
+
+////////////////////////////////////////////////////////////////////////////////////
+
+var swapiJson = [{
+		"name": "Human",
+		"classification": "mammal",
+		"language": "Galactic Basic"
+	},
+	{
+		"name": "Droid",
+		"classification": "artificial",
+		"language": "n/a",
+	},
+	{
+		"name": "Wookiee",
+		"classification": "mammal",
+		"language": "Shyriiwook",
+	}
+]
+
+lista = document.getElementById("listaStarWars");
+
+lista.innerHTML = "";
+
+lis ="";
+
+for(i=0;i<swapiJson.length;i++){
+	lis += `<li>name: ${swapiJson[i].name}
+				<ul id="indentada">					
+					<li>classification: ${swapiJson[i].classification}</li>
+					<li>language: ${swapiJson[i].language}</li>
+				</ul>
+			</li>`;
+}
+
+
+lista.innerHTML=lis;
+
+document.getElementsById("indentada").style.paddingLeft = "50px";
+
+h1.style.color = "red";
+h1.textContent = "Nuevo contenido, cambiado por JS.";
+h1.innerHTML= h1.innerHTML + `	<span>
+									${texto}
+								</span>`;
+
+
+
+
+
+
+
 
 function goTop(event) {
-	console.debug("Pulsado #boton-subir");
+	console.log("Pulsado #boton-subir");
 
 	// prevenir que el ancla navegue a otra URL.
 	event.preventDefault();
@@ -48,18 +175,17 @@ function vaciarCorazon(event) {
 }
 
 function contadorLikes() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("resultado").innerHTML = localStorage.clickcount + " likes.";
-  } else {
-    document.getElementById("resultado").innerHTML = "Sorry, your browser does not support web storage...";
-  }
+	if (typeof (Storage) !== "undefined") {
+		if (localStorage.clickcount) {
+			localStorage.clickcount = Number(localStorage.clickcount) + 1;
+		} else {
+			localStorage.clickcount = 1;
+		}
+		document.getElementById("resultado").innerHTML = localStorage.clickcount + " likes.";
+	} else {
+		document.getElementById("resultado").innerHTML = "Sorry, your browser does not support web storage...";
+	}
 }
-
 
 
 
