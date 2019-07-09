@@ -1,6 +1,7 @@
 <%@include file="../includes/header.jsp" %>
 
-		<h1>Menú de ejercicios de CSS</h1>
+		<h1>ejercicios de CSS</h1>
+		<hr>
 			
 		<nav>		
 			<ol>

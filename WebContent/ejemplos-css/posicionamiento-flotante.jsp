@@ -25,7 +25,7 @@
 				padding-bottom: 10px;
 			}
 			
-			footer p{
+			article footer p{
 			background-color: rgba(128, 128, 128, 0.5);
 			}
 			

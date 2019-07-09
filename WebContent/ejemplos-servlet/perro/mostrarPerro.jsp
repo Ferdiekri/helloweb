@@ -1,9 +1,9 @@
 <%@page import="com.ipartek.formacion.model.Perro"%>
 <%@page import="java.util.ArrayList"%>
-<%@include file="../includes/header.jsp" %>
+<%@include file="../../includes/header.jsp" %>
 
-	<main class="content">
 		<h1>Mostrar último perro.</h1>
+		<hr>
 		
 		<table>
 			<tr>
@@ -42,8 +42,6 @@
 		%>
 		</ol>
 		
-		<a href="perro/formPerro.jsp?">Crear otro perro.</a>
+		<a href="ejemplos-servlet/perro/formPerro.jsp?">Crear otro perro.</a>
 		
-	</main>
-	
-<%@include file="../includes/footer.jsp" %>
+<%@include file="../../includes/footer.jsp" %>

@@ -1,7 +1,7 @@
-<%@include file="../includes/header.jsp" %>
+<%@include file="../../includes/header.jsp" %>
 
-	<main class="content">
 		<h1>Página del Saludo</h1>
+		<hr>
 	
 		<h2>Saludo:</h2>
 	
@@ -14,6 +14,5 @@
 				out.print("<p>" + atributoSaludo + "</p>");
 			}
 		%>
-</main>
-	
-<%@include file="../includes/footer.jsp" %>
+		
+<%@include file="../../includes/footer.jsp" %>

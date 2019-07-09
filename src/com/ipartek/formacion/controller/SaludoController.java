@@ -22,7 +22,7 @@ public class SaludoController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String vista = "/saludo/respuesta.jsp";
+		String vista = "/ejemplos-servlet/saludo/respuesta.jsp";
 
 		// Mirar name del input.
 		String nombre = request.getParameter("nombre");
@@ -42,7 +42,7 @@ public class SaludoController extends HttpServlet {
 		
 		if (nombre == null || nombre.isEmpty()) {
 			request.setAttribute(nombre, "Por favor, introduce un nombre.");
-			vista="/saludo/formulario.jsp";
+			vista="/ejemplos-servlet/saludo/formulario.jsp";
 		}else {
 			if ("eu".equalsIgnoreCase(idioma)) {
 				saludo = "Kaixo " + nombre;

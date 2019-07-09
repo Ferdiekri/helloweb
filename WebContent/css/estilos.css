@@ -50,14 +50,12 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
 	text-transform: capitalize;
-	color: #2f363c;
+	color: #003580;
 	font-weight: 700;
 	line-height: 1.25;
 }
   
 h1 {
-	/*color: teal;
-	text-transform: uppercase;*/
 	font-size: 3em;
 }
 
@@ -75,6 +73,9 @@ ol, ul{
 	list-style-type: none;
 }
 
+li{
+	padding-left: 2em;
+}
 
 
 a, a:visited{
@@ -140,7 +141,7 @@ header#principal{
 
 footer#main{
 	background-color: rgb(148, 144, 145);
-	
+	box-sizing: border-box;
 	padding: 20px;
 	margin-top: 30px;
 	height:50px;
@@ -149,25 +150,12 @@ footer#main{
 	width: 100%;
 }
 
-footer#main content{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-footer#main content::last-child{
-	padding-right: 50px;
-}
-
 code, pre {
     background: #d1ddef;
     color: #333;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
     font-size: 14px;
     font-size-adjust: .5;
-    white-space: pre-wrap;
-	word-break: break-all;
-	display:inline-block;
 }
 
 form fieldset{
@@ -182,10 +170,17 @@ form legend{
 label{
 	color: #003580;
 	margin-right: 15px;
+	display: inline-block;
+  	width: 150px;
+    text-align: right;
 }
 
 label::after{
 	content: ": ";
+}
+
+label.no-points::after{
+	content: "";
 }
 
 label.obligatorio::before{
@@ -236,6 +231,41 @@ input[type="reset"]:hover{
 	background-color:rgb(209, 221, 239);
 }
 
+article{
+	border: 1px solid black;
+	padding:10px;
+	width:50%;				
+}
+
+article p{
+text-align: justify;
+}
+
+article img{
+	width:150px;
+	height: auto;
+	float:left;
+	margin: 0 15px 10px 0;
+}
+
+.fecha-derecha{
+	float: right;
+	padding-bottom: 10px;
+}
+
+article footer p{
+	background-color: rgba(128, 128, 128, 0.5);
+	padding: 1em 2em;
+}
+
+strong{
+	font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
 /*************************************************************************
   *  3. Clases comunes
   *************************************************************************/
@@ -264,6 +294,11 @@ input[type="reset"]:hover{
 	box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+.centrado{
+	display: flex;
+    justify-content: center;
+}
+
 
 /*************************************************************************
   *  4. Layouts
@@ -277,6 +312,7 @@ input[type="reset"]:hover{
 main.content{
 	margin-top: 130px;
 	margin-bottom:100px;
+	min-height: 800px;
 }
 
 nav.content{
@@ -285,10 +321,6 @@ nav.content{
 	font-weight: 600;
 }
 
-/*nav a:hover{
-	background-color: #003580;
-	color: white;
-}*/
 
 .wrapper-nav{
 	background-color: #f7f7f7;
@@ -343,6 +375,83 @@ header#principal #parteTitulo2{
 #menu ul li::last-child{
 	margin-right: 0;
 }
+
+
+
+
+/*************************************************************************
+  *  5. Media Queries & 
+  *************************************************************************/
+
+  /* Mobile L */
+@media (max-width: 425px), (orientation: landscape) and (max-width: 768px){
+
+	header#principal {
+		padding-left: 2em;
+	}
+	
+	footer#main {
+		position: relative;
+	}
+
+	.boton-subir {
+		right: 0.25em;
+		bottom: 0.25em;
+		font-size: 1em;
+		padding: 5px;
+	}
+
+	#menu ul {
+		justify-content: space-around;
+	}
+
+	h1{
+		font-size: 2em;
+	}
+	
+	h2{
+		font-size: 1.5em;
+	}
+	
+	h3{
+		font-size: 1.5em;
+	}
+
+	main.content{
+		padding: 1em;
+		margin-top: 115px;
+	}
+
+	.wrapper-nav{
+		top: 60px;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 768px){
+	main.content{
+		background-color: teal;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,8 +16,8 @@ import com.ipartek.formacion.model.Youtube;
 @WebServlet("/YoutubeController")
 public class YoutubeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String VIEW_ELEGIR="youtube/elegirVideo.jsp";
-	private static final String VIEW_MOSTRAR="youtube/mostrarVideo.jsp";
+	private static final String VIEW_ELEGIR="ejemplos-servlet/youtube/elegirVideo.jsp";
+	private static final String VIEW_MOSTRAR="ejemplos-servlet/youtube/mostrarVideo.jsp";
 	
 	public Youtube video;
 

@@ -1,8 +1,7 @@
 <%@include file="../includes/header.jsp" %>
 
-	<main class="content">
-
-		<h1>Menú de ejercicios de JS</h1>
+		<h1>ejercicios de JS</h1>
+		<hr>
 		
 		<nav>
 			<ol>
@@ -15,6 +14,4 @@
 			</ol>
 		</nav>
 
-	</main>
-	
 <%@include file="../includes/footer.jsp" %>

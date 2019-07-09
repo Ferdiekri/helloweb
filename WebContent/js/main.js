@@ -57,100 +57,6 @@ function annoActual(){
   	document.getElementById("annoActual").innerHTML = "&copy; Ipartek - " + annoFecha;
 }
 
-var h1 = document.getElementById("titulo1");
-console.log("Seleccionado elemento h1 por su id. Contiene texto: " + h1.textContent);
-
-var texto = "hola";
-
-parrafos = document.getElementsByTagName("p");
-console.log("Parrafos %o", parrafos);
-
-for (let i = 0; i < parrafos.length; i++) {
-	parrafos[i].style.color="green";
-	parrafos[i].style.fontSize= "26px";
-	
-}
-
-var animalesJson = [{
-							"nombre": "Gato",
-							"clase": "fas fa-cat fa-3x"
-						},
-						{
-							"nombre": "Perro",
-							"clase": "fas fa-dog fa-3x"
-						},
-						{
-							"nombre": "Cuervo",
-							"clase": "fas fa-crow fa-3x"
-						}
-					];
-
-console.log("animalesJson %o", animalesJson);
-
-var lista = document.getElementById("listaAnimales");
-
-lista.innerHTML = "";
-
-var lis ="";
-
-for(i=0;i<animalesJson.length;i++){
-	lis += `<li>${animalesJson[i].nombre} <i class="${animalesJson[i].clase}"></i>`;
-}
-
-lista.innerHTML=lis;
-
-////////////////////////////////////////////////////////////////////////////////////
-
-var swapiJson = [{
-		"name": "Human",
-		"classification": "mammal",
-		"language": "Galactic Basic"
-	},
-	{
-		"name": "Droid",
-		"classification": "artificial",
-		"language": "n/a",
-	},
-	{
-		"name": "Wookiee",
-		"classification": "mammal",
-		"language": "Shyriiwook",
-	}
-]
-
-lista = document.getElementById("listaStarWars");
-
-lista.innerHTML = "";
-
-lis ="";
-
-for(i=0;i<swapiJson.length;i++){
-	lis += `<li>name: ${swapiJson[i].name}
-				<ul id="indentada">					
-					<li>classification: ${swapiJson[i].classification}</li>
-					<li>language: ${swapiJson[i].language}</li>
-				</ul>
-			</li>`;
-}
-
-
-lista.innerHTML=lis;
-
-document.getElementsById("indentada").style.paddingLeft = "50px";
-
-h1.style.color = "red";
-h1.textContent = "Nuevo contenido, cambiado por JS.";
-h1.innerHTML= h1.innerHTML + `	<span>
-									${texto}
-								</span>`;
-
-
-
-
-
-
-
-
 function goTop(event) {
 	console.log("Pulsado #boton-subir");
 
@@ -160,6 +66,101 @@ function goTop(event) {
 	//buscar el body id="top" y cambiar el scroll a 0.
 	document.getElementById("top").scrollTop = 0;
 
+}
+
+function cambiarTextos(){
+
+	var h1 = document.getElementById("tituloJS");
+	console.log("Seleccionado elemento h1 por su id. Contiene texto: " + h1.textContent);
+
+	var texto = " a JavaScript";
+
+	h1.innerHTML += texto;
+	console.log("Seleccionado elemento h1 por su id. Contiene texto: " + h1.textContent);
+
+	h1.style.color = "red";
+	h1.innerHTML= h1.innerHTML + `	<span>
+										Nuevo contenido, a&ntilde;adido por JS.
+									</span>`;
+
+	////////////////////////////////////////////////////////////////////////////////////
+
+	parrafos = document.getElementsByTagName("p");
+	console.log("Parrafos %o", parrafos);
+
+	for (let i = 0; i < parrafos.length; i++) {
+		parrafos[i].style.padding="1em 5em";
+		parrafos[i].style.color="green";
+		parrafos[i].style.fontSize= "1.5em";
+		
+	}
+}
+
+function pruebasListas(){
+
+	var animalesJson = [{
+								"nombre": "Gato",
+								"clase": "fas fa-cat fa-3x"
+							},
+							{
+								"nombre": "Perro",
+								"clase": "fas fa-dog fa-3x"
+							},
+							{
+								"nombre": "Cuervo",
+								"clase": "fas fa-crow fa-3x"
+							}
+						];
+
+	console.log("animalesJson %o", animalesJson);
+
+	var lista = document.getElementById("listaAnimales");
+
+	lista.innerHTML = "";
+
+	var lis ="";
+
+	for(i=0;i<animalesJson.length;i++){
+		lis += `<li>${animalesJson[i].nombre} <i class="${animalesJson[i].clase}"></i>`;
+	}
+
+	lista.innerHTML=lis;
+
+	////////////////////////////////////////////////////////////////////////////////////
+
+	var swapiJson = [{
+			"name": "Human",
+			"classification": "mammal",
+			"language": "Galactic Basic"
+		},
+		{
+			"name": "Droid",
+			"classification": "artificial",
+			"language": "n/a",
+		},
+		{
+			"name": "Wookiee",
+			"classification": "mammal",
+			"language": "Shyriiwook",
+		}
+	]
+
+	lista = document.getElementById("listaStarWars");
+
+	lista.innerHTML = "";
+
+	lis ="";
+
+	for(i=0;i<swapiJson.length;i++){
+		lis += `<li>name: ${swapiJson[i].name}
+					<ul id="indentada">					
+						<li>classification: ${swapiJson[i].classification}</li>
+						<li>language: ${swapiJson[i].language}</li>
+					</ul>
+				</li>`;
+	}
+
+	lista.innerHTML=lis;
 }
 
 function llenarCorazon(event) {
@@ -194,8 +195,6 @@ function contadorLikes() {
 		document.getElementById("resultado").innerHTML = "Sorry, your browser does not support web storage...";
 	}
 }
-
-
 
 
 

@@ -18,7 +18,7 @@ import com.ipartek.formacion.model.Perro;
 public class PerroController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	// private static final String VIEW_CREAR = "perro/formPerro.jsp";
-	private static final String VIEW_MOSTRAR = "perro/mostrarPerro.jsp";
+	private static final String VIEW_MOSTRAR = "ejemplos-servlet/perro/mostrarPerro.jsp";
 	private static final String vista = VIEW_MOSTRAR;
 	
 	private ArrayList<Perro> perros = new ArrayList<Perro>();

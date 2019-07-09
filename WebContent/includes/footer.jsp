@@ -9,6 +9,7 @@
 		<footer id="main">
 			<div class="content">
 				<span id="annoActual">&copy;</span>
+				<br>
 				<span>
 					<i class="fab fa-facebook-square"></i>
 					<i class="fab fa-twitter-square"></i>
@@ -19,9 +20,12 @@
 			</div>
 		</footer>
 		
-		<script src="js/main.js"></script>
+		<!-- Scripts de otros -->
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
+		
+		<!-- Nuestros scripts -->
+		<script src="js/main.js"></script>
 		
 	</body>
 </html>

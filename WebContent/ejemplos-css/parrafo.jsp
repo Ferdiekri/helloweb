@@ -1,8 +1,7 @@
 <%@include file="../includes/header.jsp" %>
 
-	<main class="content">
-
 		<h1>CSS / Párrafos</h1>
+		<hr>
 		
 		<strong><code><pre>
 .parrafo::first-line{
@@ -37,7 +36,5 @@
 			<code>text-align: right;</code>
 		</strong>
 		<p class="parrafo p3">Mauris tincidunt condimentum eleifend. Etiam semper dui et nulla elementum posuere in id leo. In nec nisi massa. Cras scelerisque, ex vel suscipit cursus, libero lorem accumsan lorem, quis pellentesque felis libero et lectus. Donec pellentesque velit metus, sit amet condimentum neque interdum id. Duis quis vehicula dui. Ut a sem sit amet est hendrerit ultrices ullamcorper at elit. Nam sodales commodo leo malesuada venenatis. Phasellus at varius nunc, vel rutrum massa. Maecenas pretium nulla sed mauris hendrerit sodales sit amet eu mauris. Fusce imperdiet arcu mi, nec sollicitudin orci pretium sed. Nullam sollicitudin sem sem, ut mollis leo porttitor ac. Donec suscipit, nibh in consequat consectetur, nulla tellus ultrices justo, sed ornare odio mi id neque. Nam ac neque efficitur, condimentum lacus quis, hendrerit magna. Proin libero purus, lobortis vel lorem mattis, blandit eleifend massa.</p>
-		
-	</main>
 	
 <%@include file="../includes/footer.jsp" %>

@@ -1,6 +1,7 @@
-<%@include file="../includes/header.jsp" %>
+<%@include file="../../includes/header.jsp" %>
 
 		<h1>Nuevo Vídeo</h1>
+		<hr>
 		<p class="text-danger">${mensaje}</p>
 		
 		<p>Pista<br>CHILD'S PLAY Official Trailer #2 - (2019)<br>PeHNLikDiVw</p>
@@ -38,4 +39,4 @@
 			</fieldset>
 		</form>
 	
-<%@include file="../includes/footer.jsp" %>
+<%@include file="../../includes/footer.jsp" %>

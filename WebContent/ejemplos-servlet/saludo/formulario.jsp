@@ -1,9 +1,10 @@
-<%@include file="../includes/header.jsp" %>
+<%@include file="../../includes/header.jsp" %>
 
-	<main class="content">
 	<h1>Soy un formulario.</h1>
+	<hr>
+	
 	<p style="color:red">${mensaje}</p>
-	<form action="../saludar" method="get">
+	<form action="saludar" method="get">
 
 		<input type="text" name="nombre" placeholder="Dime tu nombre">
 		
@@ -24,6 +25,5 @@
 		<input type="submit" value="Enviar">
 
 	</form>
-</main>
 	
-<%@include file="../includes/footer.jsp" %>
+<%@include file="../../includes/footer.jsp" %>
