@@ -43,9 +43,12 @@ function activateMenu(){
 	} else if (url.indexOf("/ejemplos-js/") != -1) {	
 		console.debug('activate menu JS.');
 		anclasMenu[2].classList.add('active');
+	} else if (url.indexOf("/ejemplos-bootstrap/") != -1) {
+		console.debug('activate menu BOOTSTRAP.');	
+		anclasMenu[3].classList.add('active');
 	} else if (url.indexOf("/ejemplos-servlet/") != -1) {
 		console.debug('activate menu SERVLET.');	
-		anclasMenu[3].classList.add('active');
+		anclasMenu[4].classList.add('active');
 	}
 
 	console.trace('activateMenu inicio');

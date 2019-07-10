@@ -1,0 +1,34 @@
+/*
+	Nuestra hoja de estilos principal
+	@author Eder IbÃ¡Ã±ez Rojo
+	@version 1.0
+	@fecha 10.07.2019
+	
+	1. Reset          - resetear estilos del user-agent.
+	2. Etiquetas      - dar estilo base a todas las etiquetas.
+	3. Clases comunes -
+	4. Layouts        - Secciones de la web (cabecera, menÃ¯Â¿Â½s, pies, ...)
+	5. Media queries  -  para responsive web design. 
+*/
+
+ /*********************
+  * X. 
+  *********************/
+
+main.container{
+	margin-top: 6rem!important;
+}
+
+p{
+	text-align: justify;
+}
+
+
+.bd-example span {
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    margin: .25rem;
+    background-color: #f5f5f5;
+}
+

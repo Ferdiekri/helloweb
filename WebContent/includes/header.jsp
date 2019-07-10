@@ -33,7 +33,7 @@
 		<link rel="manifest" href="images/favicon/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">		
+		<meta name="theme-color" content="#ffffff">
 		
 		<!--  RWD -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -61,7 +61,7 @@
 			<div class="content">
 				<h1>
 					<a href="${pageContext.request.contextPath}/">
-						<span id="parteTitulo2"><i class="fas fa-university"></i></span><span id="parteTitulo1">Ipar</span><span id="parteTitulo2">web</span><span id="parteTitulo1">sidad</span>
+						<span id="parteTitulo2"></span><span id="parteTitulo1">Ipar</span><span id="parteTitulo2">web</span><span id="parteTitulo1">sidad</span>
 					</a>
 				</h1>
 			</div>
@@ -71,7 +71,8 @@
 						<li><a href="ejemplos-html/index.jsp?HTML" ><i class="fab fa-html5"></i> HTML</a></li>
 						<li><a href="ejemplos-css/index.jsp?CSS" > <i class="fab fa-css3-alt"></i> CSS</a></li>
 						<li><a href="ejemplos-js/index.jsp?JS" ><i class="fab fa-js-square"></i> JS</a></li>
-						<li><a href="ejemplos-servlet/index.jsp?JSP" ><i class="fas fa-server"></i> Servlet</a></li>
+						<li><a href="ejemplos-bootstrap/index.jsp?Bootstrap" ><i class="fab fa-bootstrap"></i> Bootstrap</a></li>
+						<li><a href="ejemplos-servlet/index.jsp?Servlet" ><i class="fas fa-server"></i> Servlet</a></li>
 					</ul>
 				</nav>
 				

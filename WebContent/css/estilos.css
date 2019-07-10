@@ -144,7 +144,7 @@ footer#main{
 	box-sizing: border-box;
 	padding: 20px;
 	margin-top: 30px;
-	height:50px;
+	/*height:50px;*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -432,33 +432,3 @@ header#principal #parteTitulo2{
 		background-color: teal;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
