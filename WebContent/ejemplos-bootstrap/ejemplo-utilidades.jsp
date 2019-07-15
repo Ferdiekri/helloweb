@@ -63,11 +63,11 @@
 	<hr>
 	
 	<h2 class="text-info">Overflow</h2>
-		<div class="pl-5"> 
-  			<div class="overflow-auto">
+		<div class="pl-5">
+  			<div class="bd-example overflow-auto">
 				<p>This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.</p>
 			</div>
-			<div class="overflow-hidden">
+			<div class="bd-example overflow-hidden">
 				<p>This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.</p>
 			</div>
 		</div>

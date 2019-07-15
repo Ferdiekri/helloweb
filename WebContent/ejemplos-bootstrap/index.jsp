@@ -12,7 +12,7 @@
 						<li>1.3. <a href="ejemplos-bootstrap/ejemplo-utilidades.jsp?title=Utilidades">Utilidades</a></li>
 						<li>1.4. <a href="ejemplos-bootstrap/ejemplo-grid.jsp?title=Grid%20System">Grid System 12 columnas</a></li>
 						<li>1.5. <a href="ejemplos-bootstrap/ejemplo-pagina-completa.jsp?title=Página%20completa">Página completa</a></li>
-						<li>1.6. <a href="ejemplos-bootstrap/ejemplo-plantilla.jsp?title=Plantillazo">Plantillazo o theme</a></li>
+						<li>1.6. <a href="plantillazo/index.html" target="_blank">Plantillazo</a></li>
 					</ol>
 				</li>
 			</ol>
